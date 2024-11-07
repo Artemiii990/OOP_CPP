@@ -1,0 +1,21 @@
+# ninja log v6
+40	2861	7527024979926844	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+52	3954	7527024980042224	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+3960	4318	7527025019118493	OOP_cpp.exe	ed55bd1cb1e6c237
+19	2471	7527025603715978	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+2473	2669	7527025628260669	OOP_cpp.exe	ed55bd1cb1e6c237
+18	618	7527027448553701	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+26	2510	7527027448633709	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+2511	2716	7527027473484852	OOP_cpp.exe	ed55bd1cb1e6c237
+12	693	7527043173761948	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+27	2566	7527043173912851	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+2566	2753	7527043199308407	OOP_cpp.exe	ed55bd1cb1e6c237
+23	632	7527062965251701	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+17	2564	7527063385418781	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+2565	2753	7527063410896097	OOP_cpp.exe	ed55bd1cb1e6c237
+19	700	7527064099163886	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+28	2689	7527064099255160	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+19	658	7527064273985984	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
+28	2416	7527064274085065	CMakeFiles/OOP_cpp.dir/StudentGrades.cpp.obj	bff8cb109fdffb6f
+2416	2593	7527064297971294	OOP_cpp.exe	ed55bd1cb1e6c237
+18	688	7527077510658042	CMakeFiles/OOP_cpp.dir/Student.cpp.obj	92bf81d06fbb242e
