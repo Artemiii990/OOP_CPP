@@ -65,3 +65,18 @@ void Student::setMark(int mark, int index) {
     }
     marks[index] = mark;
 }
+
+
+Student::~Student() {
+    if (marks != nullptr) {
+        delete[] marks;
+    }
+
+    if (name != nullptr) {
+        delete[] name;
+    }
+
+    cout << "Кінець деструктору" <<"\n";
+    system("pause");
+}
+

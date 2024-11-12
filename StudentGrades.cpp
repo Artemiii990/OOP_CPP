@@ -12,7 +12,7 @@ int main(){
 
     cout<<"Успішність студента"<<endl<<endl;
 
-    Student student("Lukas", new int[3]{11,9,7}, 3);//створення об'єкту классу
+    Student student("Artem", new int[3]{11,9,7}, 3);//створення об'єкту классу
 
     cout<<"Після виклику конструктора"<<"\n";
 
