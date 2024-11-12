@@ -1,28 +1,34 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+
 #include "Student.h"
 using namespace std;
 
 int main(){
     system("chcp 65001");
-cout<<"Успішність студента"<<endl<<endl;
 
-Student student("Artem");//створення об'єкту классу
+    // setlocale(LC_ALL, "RU");
 
-cout<<"Після виклику конструктора"<<"\n";
+    cout<<"Успішність студента"<<endl<<endl;
 
-// student.marks[0] = 11;
-// student.marks[1] = 9;
-// student.marks[2] = 7;
+    Student student("Lukas", new int[3]{11,9,7}, 3);//створення об'єкту классу
 
-student.setMark(11, 0);
-student.setMark(8, 1);
-student.setMark(10, 2);
+    cout<<"Після виклику конструктора"<<"\n";
 
-double resAver = student.getAvg();
+    //strcpy_s(student.name, 21, "Lukas");
+    // student.marks[0] = 11;
+    // student.marks[1] = 9;
+    // student.marks[2] = 7;
+
+    // student.setMark(11,0);
+    // student.setMark(9,1);
+    // student.setMark(7,2);
+
+    double resAver = student.getAvg();
 
 
-cout<<student.getName()<<" : "<<"Середній бал = "<<resAver<<"\n";
+
+    cout<<student.getName()<<" : "<<"Середній бал = "<<resAver<<"\n";
 
 }

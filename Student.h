@@ -9,29 +9,27 @@ using namespace std;
 
 class Student{
 
-private:
     //data members - змінні классу
-    //// модифікатор доступу (інкапсуляція)
-       char* name;
-       int* marks;
-       int marksCount;
+private: // модифікатор доступу (інкапсуляція)
+    char* name;
+    int marksCount;
+    int* marks;
 
-    public:
-
+public:
     //member function - функція классу
     double getAvg();
 
-    const char* getName();
+    void createName(const char* studentName);
 
+    // доступ до поля name
+    const char* getName();
     void setName(const char* studentName);
 
+    // доступ до елементів масиву marks
+    int getMark(int index);
     void setMark(int mark, int index);
 
-    int getMark(int index);
-
-    Student(){
-        cout<<"Конструктор студента"<<"\n";
-    }
+    Student();
 
     Student(const char* studentName, const int* studentMarks, int studentMarksCount);
 

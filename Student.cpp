@@ -2,11 +2,14 @@
 using namespace std;
 
 
-Student::Student(const char *studentName,
-    const int *studentMarks,
-    int studentMarksCount) {
+Student::Student() {
+    cout<<"Конструктор студента"<<"\n";
+}
 
-    setName(studentName);
+Student::Student(const char *studentName,
+                 const int *studentMarks,
+                 int studentMarksCount) {
+    createName(studentName);
 
     marks = new int[studentMarksCount];
 
@@ -15,7 +18,6 @@ Student::Student(const char *studentName,
     }
     marksCount = studentMarksCount;
 }
-
 
 void Student::createName(const char *studentName) {
     int nameLength = strlen(studentName);
@@ -27,18 +29,16 @@ void Student::createName(const char *studentName) {
 
 
 // реализація методу обчислення среднього бала
-double Student::getAvg(){
+double Student::getAvg() {
     double sum = 0;
-    for (int i = 0; i < 3; i++)
-    {
-        sum+=marks[i];
+    for (int i = 0; i < 3; i++) {
+        sum += marks[i];
     }
-    return sum/3;
+    return sum / 3;
 }
 
-
-const char* Student::getName()
-{
+// доступ до поля name без можливості його зміни
+const char *Student::getName() {
     return name;
 }
 
@@ -48,18 +48,19 @@ void Student::setName(const char *studentName) {
     delete[] name;
     createName(studentName);
 }
-int Student::getMark(int index)
-{
+
+// доступ до елементів масиву marks
+int Student::getMark(int index) {
     return marks[index];
 }
-void Student::setMark(int mark, int index)
-{
+
+void Student::setMark(int mark, int index) {
     if (index < 0 || index >= marksCount) {
         return;
     }
+
     // присвоювання з перевіркою оцінки
-    if (mark < 1 or mark > 12)
-    {
+    if (mark < 1 or mark > 12) {
         mark = 0;
     }
     marks[index] = mark;
