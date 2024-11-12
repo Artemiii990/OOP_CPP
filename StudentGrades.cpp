@@ -5,7 +5,7 @@
 #include "Student.h"
 using namespace std;
 
-int main(){
+int main() {
     system("chcp 65001");
 
     // setlocale(LC_ALL, "RU");
@@ -31,4 +31,15 @@ int main(){
 
     cout<<student.getName()<<" : "<<"Середній бал = "<<resAver<<"\n";
 
+
+    const int size = 2;
+
+    Student* students = new Student[size] {
+        Student("Kevin", new int[3]{12,5,9}, 3),
+          Student("Bob", new int[3]{10,12,3}, 3)
+    };
+
+    for(Student* stud = students; stud < students + size; stud++){
+        cout << stud->getName()<<": Середній балл: "<<stud->getAvg()<<endl;
+    }
 }
